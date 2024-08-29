@@ -1,6 +1,5 @@
 package com.example.rqchallenge.employees.connector.model.response;
 
-import com.example.rqchallenge.employees.model.Employee;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

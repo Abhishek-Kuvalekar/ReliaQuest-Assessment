@@ -1,9 +1,7 @@
 package com.example.rqchallenge.employees.controller;
 
-import com.example.rqchallenge.employees.connector.EmployeeConnector;
 import com.example.rqchallenge.employees.model.Employee;
 import com.example.rqchallenge.employees.service.IEmployeeService;
-import io.reactivex.rxjava3.core.Single;
 import io.reactivex.rxjava3.core.Single;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.slf4j.MDC;
@@ -12,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -23,7 +20,7 @@ public class EmployeeController implements IEmployeeController {
     IEmployeeService employeeService;
 
     @Override
-    public Single<ResponseEntity<List<Employee>>> getAllEmployees() throws IOException {
+    public Single<ResponseEntity<List<Employee>>> getAllEmployees() {
         Map<String, String> contextMap = MDC.getCopyOfContextMap();
         return Single.fromCallable(() -> {
             MDC.setContextMap(contextMap);
