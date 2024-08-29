@@ -1,5 +1,0 @@
-employee:
-  config:
-    base-url: 'https://dummy.restapiexample.com'
-    paths:
-      get-all-employees: '/api/v1/employees'

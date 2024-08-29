@@ -10,4 +10,9 @@ public final class Constants {
     public static final String MAP_KEY_SALARY = "salary";
 
     public static final String EMPTY_STRING = "";
+
+    public static final String EXCEPTION_MESSAGE_BAD_REQUEST = "Bad Request";
+    public static final String EXCEPTION_MESSAGE_INTERNAL_SERVER_ERROR = "Internal Server Error";
+
+    public static final String REQUEST_UUID = "RequestUuid";
 }

@@ -1,24 +1,32 @@
 package com.example.rqchallenge.employees.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
+@Setter
+@ToString
 public class Employee {
-    @JsonProperty("id")
+    @JsonSetter("id")
+    @Getter(onMethod_ = @JsonGetter("id"))
     private int id;
 
-    @JsonProperty("employee_name")
+    @JsonSetter("employee_name")
+    @Getter(onMethod_ = @JsonGetter("name"))
     private String name;
 
-    @JsonProperty("employee_salary")
+    @JsonSetter("employee_salary")
+    @Getter(onMethod_ = @JsonGetter("salary"))
     private int salary;
 
-    @JsonProperty("employee_age")
+    @JsonSetter("employee_age")
+    @Getter(onMethod_ = @JsonGetter("age"))
     private int age;
 
-    @JsonProperty(value = "profile_image", defaultValue = "")
-
+    @JsonSetter(value = "profile_image")
+    @Getter(onMethod_ = @JsonGetter("profile_image"))
     private String image;
 }

@@ -1,11 +1,11 @@
 package com.example.rqchallenge.employees.connector;
 
 import com.example.rqchallenge.employees.constant.Constants;
-import com.example.rqchallenge.employees.model.request.CreateEmployeeRequest;
-import com.example.rqchallenge.employees.model.response.CreateEmployeeResponse;
-import com.example.rqchallenge.employees.model.response.DeleteEmployeeResponse;
-import com.example.rqchallenge.employees.model.response.GetAllEmployeesResponse;
-import com.example.rqchallenge.employees.model.response.GetEmployeeByIdResponse;
+import com.example.rqchallenge.employees.connector.model.request.CreateEmployeeRequest;
+import com.example.rqchallenge.employees.connector.model.response.CreateEmployeeResponse;
+import com.example.rqchallenge.employees.connector.model.response.DeleteEmployeeResponse;
+import com.example.rqchallenge.employees.connector.model.response.GetAllEmployeesResponse;
+import com.example.rqchallenge.employees.connector.model.response.GetEmployeeByIdResponse;
 import com.example.rqchallenge.employees.properties.EmployeeProperties;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -6,3 +6,5 @@ employee:
       get-employee-by-id: '/api/v1/employee/ID'
       create-employee: '/api/v1/create'
       delete-employee: '/api/v1/delete/ID'
+    cache:
+      ttl: 60000
