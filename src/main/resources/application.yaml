@@ -1,0 +1,8 @@
+employee:
+  config:
+    base-url: 'https://dummy.restapiexample.com'
+    paths:
+      get-all-employees: '/api/v1/employees'
+      get-employee-by-id: '/api/v1/employee/ID'
+      create-employee: '/api/v1/create'
+      delete-employee: '/api/v1/delete/ID'
